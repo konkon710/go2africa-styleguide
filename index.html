@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+ <html id="sg"  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Go2Africa StyleGuide</title>
+    <meta name="description" content="This Go2Africa Style Guide maintains design and code standards and documentation for a digital user interface.">
+    <meta name="keywords" content="go2africa, style guide, playbook, design, code, jekyll">
+    <meta name="author" content="Konrad Hugo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/styleguide/branding/g2a-png/Go2Africa favicon_high.png">
+    <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
+    <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
+    
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">  
+  <a href="/index.html" class="logo">
+    <div class=""><img src="/styleguide/branding/g2a-png/Go2Africa logo_2021_White_USP_High Res-01.png"></div>
+    
+  </a>
+  <div style="font-size: 1.5rem; text-align: center;">Go2Africa StyleGuide</div>
+  <ul>
+    <li><a href="/index.html" class="active">Overview</a></li>
+  </ul>
+  
+  <div class="group">
+    <div class="group_title">About</div>
+    <ul>
+      <li><a href="/docs/about/01-getting-started.html">Getting Started</a></li>
+    
+      <li><a href="/docs/about/02-design-principle.html">Design Principle</a></li>
+    
+      <li><a href="/docs/about/03-maturity.html">Maturity Scale</a></li>
+    
+      <li><a href="/docs/about/04-roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Foundations</div>
+    <ul>
+      <li><a href="/docs/foundations/branding.html">Branding</a></li>
+    
+      <li><a href="/docs/foundations/color.html">Color</a></li>
+    
+      <li><a href="/docs/foundations/typography.html">Typography</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Components</div>
+    <ul>
+      <li><a href="/docs/components/homepage-blocks.html">Homepage (Blocks)</a></li>
+    
+      <li><a href="/docs/components/positive-impact-banners.html">Positive Impact (Banners)</a></li>
+    
+      <li><a href="/docs/components/table.html">Tables (Copy & Content)</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Templates</div>
+    <ul>
+      <li><a href="/docs/templates/full-width.html">Template A</a></li>
+    </ul>
+  </div>
+  
+  <ul>
+    <li><a href="/docs/sample-pages/sample-pages.html">Sample Pages</a></li>
+  </ul>
+</div>
+      <main class="sg-main">
+        <header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">Overview</div>   
+      <div class="sub_title typo_crow">Welcome to the Go2Africa Living Style Guide.</div>
+    </div>
+    
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    <h1>👋 Welcome </h1>
+
+<!-- ## Why?
+
+There are a lot of really great style guide methods, tools and [examples](http://styleguides.io) out there... but, I struggled to find one that was:
+
+- easy and quick to use,
+- simple to maintain,
+- a match for my current workflow,
+- flexible enough to use on a wide variety of projects. -->
+
+<h2 id="some-overview-of-the-living-style-guide">Some overview of the living style guide:</h2>
+
+<p>Here are the requirements catered to by this style guide:</p>
+
+<ul>
+  <li>Use only <a href="https://jekyll.rb">Jekyll</a> as a pre-requisit</li>
+  <li>Use HMTL/CSS/JS to build a web component, template, etc. (These are called ‘patterns’)</li>
+  <li>Track the ‘maturity’ of a pattern - i.e. is it ready to use, or not?</li>
+  <li>Automatically add all patterns into a ‘Roadmap’</li>
+  <li>Enable simple documentation for developers, designers and product owners to use</li>
+</ul>
+
+<hr />
+
+<h2 id="help">Help</h2>
+
+<p>To get started using this tool check out these useful pages:</p>
+
+<ul>
+  <li>Read the <a href="/docs/about/02-design-principle.html">design principles</a></li>
+  <li>Setup and <a href="/docs/about/01-getting-started.html">installation</a> info</li>
+  <li>Learn how to <a href="/docs/about/01-getting-started.html#adding-patterns">add patterns</a>, and <a href="/docs/about/01-getting-started.html#adding-documentation">documentation</a></li>
+  <li>Understand the pattern <a href="/docs/about/03-maturity.html">maturity</a> scale</li>
+  <li>View all patterns in the <a href="/docs/about/04-roadmap.html">Roadmap</a></li>
+</ul>
+
+<hr />
+
+<h2 id="third-party-packages-and-dependencies">Third Party Packages and Dependencies</h2>
+
+<p>These are the dependencies and 3rd party packages added since using the style guide:</p>
+
+<ul>
+  <li>Bootstrap 5 in <code class="language-plaintext highlighter-rouge">src/assets/css/bootstrap.min.css</code> and in <code class="language-plaintext highlighter-rouge">src/assets/js/libs/bootstrap.budnle.min.js</code> <a href="https://getbootstrap.com/">Available Here</a></li>
+  <li>Lato Font Files in <code class="language-plaintext highlighter-rouge">fonts/lato</code> were extracted from <a href="https://fonts.google.com/specimen/Lato?query=lato">Google Fonts</a></li>
+</ul>
+
+<hr />
+
+<p>A few parts of this project are not in the public domain (originally installed):</p>
+
+<ul>
+  <li><a href="https://material.io/tools/icons/">Material Icons</a> font files included in the <code class="language-plaintext highlighter-rouge">styleguide/fonts</code> directory were extracted from <a href="https://github.com/google/material-design-icons">Github</a>.</li>
+  <li><a href="https://hanken.co/product/hk-grotesk/">HK Grotesk</a> font files included in the <code class="language-plaintext highlighter-rouge">styleguide/fonts</code> directory were extracted from <a href="https://hanken.co/product/hk-grotesk/">Hanken</a>, copyright Alfredo Marco Pradil and Stefan Peev.</li>
+  <li>jQuery <code class="language-plaintext highlighter-rouge">[jquery-2.1.4.min.js]</code> was extracted from <a href="https://jquery.com/">jQuery</a>, copyright The jQuery Foundation.</li>
+  <li>Roboto font files in <code class="language-plaintext highlighter-rouge">fonts/roboto</code> were extracted from <a href="https://fonts.google.com/">Google Fonts</a>, copyright Christian Robertson.</li>
+  <li>Normalize <code class="language-plaintext highlighter-rouge">[_normalize.scss]</code> was extrcted from <a href="https://github.com/necolas/normalize.css">Normalize.css</a>, copyright Nicolas Gallagher and Jonathan Neal.</li>
+</ul>
+
+<p><strong>Please check with the respective rights holders for license details.</strong></p>
+
+<hr />
+
+<p><strong>This tool was created for Go2Africa as a ‘Living Styleguide’ on TBA by Konrad Hugo</strong></p>
+
+<p>It was last updated on Mar 26, 2023 by Konrad Hugo.</p>
+
+<blockquote>
+  <p><i class="icon red" data-icon="warning"></i>This tool has been tested for Google Chrome (Mac) v67+ and iOS Safari. Use with Caution.</p>
+</blockquote>
+
+<h1 id="license">License</h1>
+
+<p>This tool is free for everyone to use, and modify, but don’t try and sell it.
+Available under <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache license version 2.0</a>.</p>
+
+<p>It was built using <a href="https://jekyll.rb">Jekyll</a>, it’s <a href="/docs/about/02-design-principle.html">design principle</a> is based on the <a href="https://designsystem.digital.gov/design-principles/">US Design Standards</a>, and the css architecture is based on the <a href="https://matthewelsom.com/blog/simple-scss-playbook.html">Simple SCSS Playbook</a>.</p>
+
+  </div>
+</article>
+      </main>
+    </div>
+    <script src="/styleguide/js/main.js"></script>
+<script src="/styleguide/js/libs/iframeResizer.min.js"></script>
+<script src="/styleguide/js/resize.js"></script>
+  </body>
+</html>
