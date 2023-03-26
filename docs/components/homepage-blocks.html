@@ -1,0 +1,692 @@
+<!DOCTYPE HTML>
+ <html id="sg"  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Go2Africa StyleGuide</title>
+    <meta name="description" content="This Go2Africa Style Guide maintains design and code standards and documentation for a digital user interface.">
+    <meta name="keywords" content="go2africa, style guide, playbook, design, code, jekyll">
+    <meta name="author" content="Konrad Hugo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/styleguide/branding/g2a-png/Go2Africa favicon_high.png">
+    <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
+    <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
+    
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">  
+  <a href="/index.html" class="logo">
+    <div class=""><img src="/styleguide/branding/g2a-png/Go2Africa logo_2021_White_USP_High Res-01.png"></div>
+    
+  </a>
+  <div style="font-size: 1.5rem; text-align: center;">Go2Africa StyleGuide</div>
+  <ul>
+    <li><a href="/index.html">Overview</a></li>
+  </ul>
+  
+  <div class="group">
+    <div class="group_title">About</div>
+    <ul>
+      <li><a href="/docs/about/01-getting-started.html">Getting Started</a></li>
+    
+      <li><a href="/docs/about/02-design-principle.html">Design Principle</a></li>
+    
+      <li><a href="/docs/about/03-maturity.html">Maturity Scale</a></li>
+    
+      <li><a href="/docs/about/04-roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Foundations</div>
+    <ul>
+      <li><a href="/docs/foundations/branding.html">Branding</a></li>
+    
+      <li><a href="/docs/foundations/color.html">Color</a></li>
+    
+      <li><a href="/docs/foundations/typography.html">Typography</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Components</div>
+    <ul>
+      <li><a href="/docs/components/homepage-blocks.html" class="active">Homepage (Blocks)</a></li>
+    
+      <li><a href="/docs/components/positive-impact-banners.html">Positive Impact (Banners)</a></li>
+    
+      <li><a href="/docs/components/table.html">Tables (Copy & Content)</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Templates</div>
+    <ul>
+      <li><a href="/docs/templates/full-width.html">Template A</a></li>
+    </ul>
+  </div>
+  
+  <ul>
+    <li><a href="/docs/sample-pages/sample-pages.html">Sample Pages</a></li>
+  </ul>
+</div>
+      <main class="sg-main">
+        <header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">Homepage (Blocks)</div>   
+      <div class="sub_title typo_crow">These are the UI blocks that are found on the homepage of Go2Africa</div>
+    </div>
+    
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    
+<section class="sg_pattern" id="homepage-opening-block">
+  <div class="title">
+    <a class="permalink" href="#homepage-opening-block"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Homepage &gt; Opening Block</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/homepage-blocks.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/blocks/homepage-blocks/opening-block/homepage-opening-block.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/homepage-blocks.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-lg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h1&gt;</span>African. Safari. Experts.<span class="nt">&lt;/h1&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"main-text"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>Welcome to Go2Africa. Since 1998 we have been planning trips the length and breadth of the continent. The secret to our success?  Our commitment to first-hand knowledge of every destination, lodge and activity we recommend. Collectively, we spend more than 365 days a year on safari to ensure you get the best, unbiased advice.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>We won’t show you the world; we'll show you Africa, better than anyone else.<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icons"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row g-0 fluid gy-4 align-center"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row align-center"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/description/based-in-capetown.svg"</span><span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"font-700"</span><span class="nt">&gt;</span>Based in Cape Town, South Africa<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row align-center"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/description/safari-partners.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"font-700"</span><span class="nt">&gt;</span>3000+ safari partners across Africa<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row align-center"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/description/jeep.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"font-700"</span><span class="nt">&gt;</span>Assistance <span class="err">&amp;</span> local know-how whenever you need it<span class="nt">&lt;/span&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Opening Block and first thing you see when scrolling down the homepage.</p>
+
+<hr />
+
+<section class="sg_pattern" id="homepage-top-experiences-carousel">
+  <div class="title">
+    <a class="permalink" href="#homepage-top-experiences-carousel"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Homepage &gt; Top Experiences Carousel</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/homepage-block-top-experiences-carousel.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/blocks/homepage-blocks/top-experiences-block/homepage-block-top-experiences-carousel-2.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/homepage-block-top-experiences-carousel.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"homepage-top-experiences"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!--Header above the carousel--&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"top-experiences-header"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h1&gt;</span>
+                        Africa's Top Wildlife Experiences
+                    <span class="nt">&lt;/h1&gt;</span>
+    
+                    <span class="nt">&lt;p&gt;</span>
+                        Whether you are dreaming of a first-hand meeting with the Big 5, getting up close and personal to a gorilla, witnessing one of the planet's most spectacular natural events, or simply relaxing on a pristine beach, our experts will tell you how and where to do it.
+                    <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+    
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                <span class="c">&lt;!--The Actual Carousel element --&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"carouselExampleIndicators"</span> <span class="na">class=</span><span class="s">"carousel slide"</span><span class="nt">&gt;</span>
+                  <span class="c">&lt;!--These are the indicators toward the bottom of the carousel showing which slide you are viewing--&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-indicators mt-3"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleIndicators"</span> <span class="na">data-bs-slide-to=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">aria-current=</span><span class="s">"true"</span> <span class="na">aria-label=</span><span class="s">"Slide 1"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleIndicators"</span> <span class="na">data-bs-slide-to=</span><span class="s">"1"</span> <span class="na">aria-label=</span><span class="s">"Slide 2"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleIndicators"</span> <span class="na">data-bs-slide-to=</span><span class="s">"2"</span> <span class="na">aria-label=</span><span class="s">"Slide 3"</span><span class="nt">&gt;&lt;/button&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="c">&lt;!--Wrapper for the Carousel Slide Content--&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span><span class="nt">&gt;</span>
+
+                      <span class="c">&lt;!--Carousel Slide Numero UNO--&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item active"</span><span class="nt">&gt;</span>
+                        <span class="c">&lt;!--This card wraps the three articles underneath the heading which describes them--&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                          <span class="c">&lt;!--Here is the descriptive heading for the underlying articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header top-experiences-card-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h2&gt;</span>Resources for Planning Your First Safari<span class="nt">&lt;/h2&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="c">&lt;!--This wraps the content of the card, so the thre articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+                               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-custom"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articles"</span><span class="nt">&gt;</span>
+                                    <span class="c">&lt;!--Far left article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article first"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/masai-serengeti-kruger.png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Destination Guide<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>Masai Mara, Serengeti or Kruger?<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>Arguably three of safari's heaviest hitters, each offering a truly unique experience. Choosing the best one is hard, but fortunately we've been exploring all three since 1998.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/kruger-vs-masai-mara-vs-serengeti"</span><span class="nt">&gt;</span>Weigh Them Up<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Middle article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article second"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/what-does-safari-cost (1).png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Budget Guidelines<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>What Does an African Safari Cost?<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>Always a burning question on any traveller's mind. We've crunched the numbers for you and break down safari budgets.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/what-does-a-safari-cost"</span><span class="nt">&gt;</span>See Our Guide<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Far right article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article third"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/10-best-holidays.png"</span> <span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Top Trip Ideas<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>10 Best African Safari Holidays<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>We've compiled our favourite, tried-and-tested African safari holidays - all completely customisable to suit your travel wishes.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/best-african-safari-tours-top-10-picks"</span><span class="nt">&gt;</span>View Our List<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                               <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>                      
+                      <span class="nt">&lt;/div&gt;</span>
+
+                      <span class="c">&lt;!--Carousel Slide Numero TWO--&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="c">&lt;!--This card wraps the three articles underneath the heading which describes them--&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                          <span class="c">&lt;!--Here is the descriptive heading for the underlying articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header top-experiences-card-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h2&gt;</span>The Wildebeest Migration: All You Need to Know<span class="nt">&lt;/h2&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="c">&lt;!--This wraps the content of the card, so the thre articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+                               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-custom"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articles"</span><span class="nt">&gt;</span>
+                                    <span class="c">&lt;!--Far left article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article first"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/how-does-migration-work.png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>A Beginner's Guide<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>How Does the Wildebeest Migration Work?<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>We've compiled a month-by-month guide to the Wildebeest Migration, including our expert planning tips to put you in the right place at the right time.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/how-the-wildebeest-migration-works"</span><span class="nt">&gt;</span>View Our Guide<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Middle article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article second"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/front-row-seats.png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Migration Safari Accomodation<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>Where to Get Front-Row Seats<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>From mobile (movable) camps to luxury lodges, we've rounded up our favourite places to stay to witness the spectacle of the Wildebeest Migration.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/20-best-places-to-stay-to-see-the-wildebeest-migration"</span><span class="nt">&gt;</span>See Our List<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Far right article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article third"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/best-migration-safaris.png"</span> <span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Top Trip Ideas<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>Best Migration Safaris<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>We've compiled our best itineraries - all completely customisable to suit your travel wishes.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/holiday-types/migration-safari/why-go"</span><span class="nt">&gt;</span>View Our Trips<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                               <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+
+                      <span class="c">&lt;!--Carousel Slide Numero THREE--&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="c">&lt;!--This card wraps the three articles underneath the heading which describes them--&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                          <span class="c">&lt;!--Here is the descriptive heading for the underlying articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header top-experiences-card-header"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;h2&gt;</span>Tried <span class="err">&amp;</span> Tested Itineraries<span class="nt">&lt;/h2&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="c">&lt;!--This wraps the content of the card, so the three articles--&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+                               <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-custom"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articles"</span><span class="nt">&gt;</span>
+                                    <span class="c">&lt;!--Far left article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article first"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/13-best-safaris.png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Travel Inspiration<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>13 Best South African Safaris<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>Enjoy fantastic travel logistics, guaranteed daily sightings of the Big 5, and some of the world's best culinary experiences without breaking the bank. These are our best South Africa tours.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/best-south-africa-tours-safaris"</span><span class="nt">&gt;</span>See Our List<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Middle article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article second"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/best-kenya-safaris.png"</span><span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Travel Inspiration<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>10 Best Kenya Safaris<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>Float silently above the Masai Mara's abundant wildlife in a hot-air balloon. Get that postcard-perfect snap of elephants against a Kilimanjaro backdrop. These are our greatest Kenya safari tours.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/african-travel-blog/10-best-kenya-safari-tours-our-top-picks"</span><span class="nt">&gt;</span>See Our List<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                    <span class="c">&lt;!--Far right article with its unique content--&gt;</span>
+                                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"article third"</span><span class="nt">&gt;</span>
+                                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../../../assets/images/home/top-experience/migration-tanzania.png"</span> <span class="nt">/&gt;</span>
+                                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"articleContent"</span><span class="nt">&gt;</span>
+                                            <span class="nt">&lt;h4&gt;</span>Travel Inspiration<span class="nt">&lt;/h4&gt;</span>
+                                            <span class="nt">&lt;h3&gt;</span>12 Best Tanzanian Safaris<span class="nt">&lt;/h3&gt;</span>
+                                            <span class="nt">&lt;p&gt;</span>From witnessing nature’s greatest spectacle, the Great Migration, to encountering the Big Five inside the world’s largest inactive volcanic crater, these are our top Tanzania safari choices.<span class="nt">&lt;/p&gt;</span>
+                                            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"button ctaButton primary"</span> <span class="na">href=</span><span class="s">"https://www.go2africa.com/destinations/tanzania/where-to-go"</span><span class="nt">&gt;</span>See Our List<span class="nt">&lt;/a&gt;</span>
+                                        <span class="nt">&lt;/div&gt;</span>
+                                    <span class="nt">&lt;/div&gt;</span>
+                                <span class="nt">&lt;/div&gt;</span>
+                               <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>  
+                      <span class="nt">&lt;/div&gt;</span>
+
+
+                    <span class="nt">&lt;/div&gt;</span>
+
+                    <span class="c">&lt;!--These are the buttons you see on the middle-right &amp; middle-left of the carousel items with arrows that allow for navigation between slides--&gt;</span>
+                    <span class="c">&lt;!--This particular button below is for PREVIOUS SLIDE--&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"carousel-control-prev carousel-control-width"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleIndicators"</span> <span class="na">data-bs-slide=</span><span class="s">"prev"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"carousel-control-prev-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span> <span class="na">style=</span><span class="s">"color:black"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                    <span class="c">&lt;!--This particular button below is for NEXT SLIDE--&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"carousel-control-next carousel-control-width"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleIndicators"</span> <span class="na">data-bs-slide=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"carousel-control-next-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+                    <span class="nt">&lt;/button&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+    
+        
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Top Experiences Carousel Section which highlights numerous top African Experiences.</p>
+
+<hr />
+
+<section class="sg_pattern" id="homepage-why-travel-block">
+  <div class="title">
+    <a class="permalink" href="#homepage-why-travel-block"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Homepage &gt; Why Travel Block</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/why-travel.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/blocks/homepage-blocks/why-travel-block/homepage-why-travel-block.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/why-travel.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"why-travel"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"header-wrapper"</span><span class="nt">&gt;</span>Why Travel With Go2Africa?<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid why-travel-background"</span><span class="nt">&gt;</span>
+
+        <span class="c">&lt;!--DISPLAY THE CARD CAROUSEL ON MOBILE DEVICES ONLY--&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"why-travel-carousel"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"carouselExampleInterval"</span> <span class="na">class=</span><span class="s">"carousel slide"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner carousel-space"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item active"</span> <span class="na">style=</span><span class="s">"margin-left: auto; margin-right:auto;"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/africa.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>We are African<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Based in Cape Town, our team of experts are all born and raised in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/compass.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>We are safari experts<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>We have first-hand knowledge of every single destination, lodge and activity we recommend. Collectively, we spend more than 365 days a year on safari to ensure you get the best, unbiased advice.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/price-promise.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>Our best price promise<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Our size and trusted relationships with Africa’s top operators give us access to the best possible rates. If you find a better quote for your itinerary, let us know and we’ll match it.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/your-money-stays-in-africa.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>Your money stays in Africa<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>As an African company, we ensure 100% of the money from your safari stays in Africa, supporting local communities and conservation projects, making a difference long after you return home.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/24-7-support.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>24/7 on-safari support<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Book with us and we’ll be alongside you from our first chat, offering 24/7 assistance and local know-how from the right time zone, whenever you need it.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-item"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row carousel-card"</span><span class="nt">&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"why-travel-icon"</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/complete-financial-protection.svg"</span> <span class="nt">/&gt;</span>
+                            <span class="nt">&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;&lt;h2&gt;</span>Complete financial protection<span class="nt">&lt;/h2&gt;&lt;/div&gt;</span>
+                            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Your money is safe with us. All our clients are protected by our supplier default insurance and our accreditation bond with the Southern Africa Tourism Services Association.<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+                        <span class="nt">&lt;/div&gt;</span>
+                      <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"carousel-control-prev"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleInterval"</span> <span class="na">data-bs-slide=</span><span class="s">"prev"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"carousel-control-prev-icon carousel-control-color"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"carousel-control-next"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-target=</span><span class="s">"#carouselExampleInterval"</span> <span class="na">data-bs-slide=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"carousel-control-next-icon carousel-control-color"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="c">&lt;!--DISPLAY THE CARD GRID ON LARGER THAN MOBILE DEVICES--&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row card-grid"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4 card-margin"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/africa.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>We are African<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4 card-margin"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/compass.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>We are safari experts<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>We have first-hand knowledge of every single destination, lodge and activity we recommend. Collectively, we spend more than 365 days a year on safari to ensure you get the best, unbiased advice.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4 card-margin"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/price-promise.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>Our best price promise<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Our size and trusted relationships with Africa’s top operators give us access to the best possible rates. If you find a better quote for your itinerary, let us know and we’ll match it.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/your-money-stays-in-africa.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>Your money stays in Africa<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>As an African company, we ensure 100% of the money from your safari stays in Africa, supporting local communities and conservation projects, making a difference long after you return home.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/24-7-support.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>24/7 on-safari support<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Book with us and we’ll be alongside you from our first chat, offering 24/7 assistance and local know-how from the right time zone, whenever you need it.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/home/why-travel/icons/complete-financial-protection.svg"</span> <span class="nt">/&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-10"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;h2&gt;</span>Complete financial protection<span class="nt">&lt;/h2&gt;</span>
+                        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Your money is safe with us. All our clients are protected by our supplier default insurance and our accreditation bond with the Southern Africa Tourism Services Association.<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!--STATS SECTION--&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-sm-4 stat"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-value"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>23<span class="nt">&lt;/span&gt;</span>
+               <span class="nt">&lt;/p&gt;</span> 
+               <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-description"</span><span class="nt">&gt;</span>years curating customised safari experiences<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-sm-4 stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-value"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>1,465<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/p&gt;</span> 
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-description"</span><span class="nt">&gt;</span>client reviews at 5 stars on Feefo<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 col-sm-4 stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-value"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>10<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/p&gt;</span> 
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-description"</span><span class="nt">&gt;</span>awards won in the last year<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6 stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-value"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>500<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/p&gt;</span> 
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-description"</span><span class="nt">&gt;</span>lodges and camps visited each year<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 stat"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-value"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span&gt;</span>110,000<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/p&gt;</span> 
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"stat-description"</span><span class="nt">&gt;</span>travellers introduced to Africa<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 text-center cta-button-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"cta-button button-big"</span><span class="nt">&gt;</span>More About Us<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+
+<span class="c">&lt;!-- &lt;section class="why-travel"&gt;
+    &lt;h2&gt;Why Travel With Go2Africa?&lt;/h2&gt;
+    &lt;div class="row travel-card-wrapper"&gt;
+         
+         &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+               
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+         
+         &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+              
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+         &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+               
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+                
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+         
+         &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+                
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="col-sm-4"&gt;
+            &lt;div class="travel-card"&gt;
+                &lt;img src="/src/assets/images/home/why-travel/icons/africa.svg" /&gt;
+                
+                &lt;div class="travel-card-content-wrapper"&gt;
+                    &lt;div class="travel-card-header"&gt;
+                        &lt;h2&gt;We are African&lt;/h2&gt;
+                    &lt;/div&gt;
+                    &lt;div class="travel-card-description"&gt;
+                        &lt;p&gt;Based in Cape Town, our team of experts are all born and rased in Africa. We spend our own holidays on safari, and understand what goes into making every trip a once in a life-time experience.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        
+    &lt;/div&gt;
+&lt;/section&gt; --&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Why Travel block on the homepage, and highlights to the user the value points provided by Go2Africa.</p>
+
+  </div>
+</article>
+      </main>
+    </div>
+    <script src="/styleguide/js/main.js"></script>
+<script src="/styleguide/js/libs/iframeResizer.min.js"></script>
+<script src="/styleguide/js/resize.js"></script>
+  </body>
+</html>

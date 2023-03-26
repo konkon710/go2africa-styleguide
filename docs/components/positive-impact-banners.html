@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+ <html id="sg"  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Go2Africa StyleGuide</title>
+    <meta name="description" content="This Go2Africa Style Guide maintains design and code standards and documentation for a digital user interface.">
+    <meta name="keywords" content="go2africa, style guide, playbook, design, code, jekyll">
+    <meta name="author" content="Konrad Hugo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/styleguide/branding/g2a-png/Go2Africa favicon_high.png">
+    <link rel="stylesheet" href="/styleguide/css/styleguide.css" media="screen">
+    <script src="/styleguide/js/libs/jquery-2.1.4.min.js"></script>
+    
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      <a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">  
+  <a href="/index.html" class="logo">
+    <div class=""><img src="/styleguide/branding/g2a-png/Go2Africa logo_2021_White_USP_High Res-01.png"></div>
+    
+  </a>
+  <div style="font-size: 1.5rem; text-align: center;">Go2Africa StyleGuide</div>
+  <ul>
+    <li><a href="/index.html">Overview</a></li>
+  </ul>
+  
+  <div class="group">
+    <div class="group_title">About</div>
+    <ul>
+      <li><a href="/docs/about/01-getting-started.html">Getting Started</a></li>
+    
+      <li><a href="/docs/about/02-design-principle.html">Design Principle</a></li>
+    
+      <li><a href="/docs/about/03-maturity.html">Maturity Scale</a></li>
+    
+      <li><a href="/docs/about/04-roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Foundations</div>
+    <ul>
+      <li><a href="/docs/foundations/branding.html">Branding</a></li>
+    
+      <li><a href="/docs/foundations/color.html">Color</a></li>
+    
+      <li><a href="/docs/foundations/typography.html">Typography</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Components</div>
+    <ul>
+      <li><a href="/docs/components/homepage-blocks.html">Homepage (Blocks)</a></li>
+    
+      <li><a href="/docs/components/positive-impact-banners.html" class="active">Positive Impact (Banners)</a></li>
+    
+      <li><a href="/docs/components/table.html">Tables (Copy & Content)</a></li>
+    </ul>
+  </div>
+  
+  <div class="group">
+    <div class="group_title">Templates</div>
+    <ul>
+      <li><a href="/docs/templates/full-width.html">Template A</a></li>
+    </ul>
+  </div>
+  
+  <ul>
+    <li><a href="/docs/sample-pages/sample-pages.html">Sample Pages</a></li>
+  </ul>
+</div>
+      <main class="sg-main">
+        <header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">Positive Impact (Banners)</div>   
+      <div class="sub_title typo_crow">These banner elements align with those found on the website element map (figma) and are intended for use on the Positive Impact Page.</div>
+    </div>
+    
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    
+<section class="sg_pattern" id="banners-positive-impact-floating-navigation-bar-mobile">
+  <div class="title">
+    <a class="permalink" href="#banners-positive-impact-floating-navigation-bar-mobile"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Banners &gt; Positive Impact &gt; Floating Navigation Bar (Mobile)</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/positive-impact-floating-navigation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/banners/positive-impact/floating-navigation/floating-navigation.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/positive-impact-floating-navigation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar pi-subnav pi-mobile-subnav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Overview<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler pi-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">data-bs-target=</span><span class="s">"#navbarText"</span> <span class="na">aria-controls=</span><span class="s">"navbarText"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/src/assets/images/positive-impact/floating-navigation/arrow-down.svg"</span> <span class="na">style=</span><span class="s">"margin-left:auto; margin-right:auto;"</span><span class="nt">/&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse navbar-collapse-fix"</span> <span class="na">id=</span><span class="s">"navbarText"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav me-auto mb-2 mb-lg-0 pi-navbar-nav"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pi-nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link pi-nav-link active"</span> <span class="na">aria-current=</span><span class="s">"page"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Overview<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pi-nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link pi-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Community<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pi-nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link pi-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Environment<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pi-nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link pi-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Wildlife<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item pi-nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link pi-nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Positive Impact Safaris<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+<span class="c">&lt;!--NAVBAR WHICH EXPANDS ON MEDIUM VIEWPORTS - TO BE CHANGED TO LARGE--&gt;</span>
+<span class="c">&lt;!-- &lt;nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fifth navbar example"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Expand at lg&lt;/a&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+    &lt;div class="collapse navbar-collapse" id="navbarsExample05"&gt;
+      &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link active" aria-current="page" href="#"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item dropdown"&gt;
+          &lt;a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"&gt;Dropdown&lt;/a&gt;
+          &lt;ul class="dropdown-menu" aria-labelledby="dropdown05"&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form&gt;
+        &lt;input class="form-control" type="text" placeholder="Search" aria-label="Search"&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt; --&gt;</span>
+
+<span class="c">&lt;!-- &lt;nav class="navbar navbar-expand-md mobile-navbar"&gt;
+    &lt;div class="container-fluid"&gt;
+      &lt;div class="navbar-heading"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Community&lt;/a&gt;
+        &lt;button class="navbar-btn text-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"&gt;
+        
+        &lt;img src="/src/assets/images/positive-impact/floating-navigation/arrow-down.svg" style="margin-left:auto; margin-right:auto;"/&gt;
+      &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;hr&gt;
+      &lt;div class="collapse navbar-collapse" id="navbarText"&gt;
+        &lt;ul class="navbar-nav me-auto mb-2 mb-lg-0"&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Overview&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active" aria-current="page" href="#"&gt;Community&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Environment&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Wildlife&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link" href="#"&gt;Positive Impact Safaris&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt; --&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Floating Navigation found upon entering the Positive Impact page. Primarily used for exploring the different sections of information available to the user, relating to Positive Impact Safari Tours.</p>
+
+<hr />
+
+<section class="sg_pattern" id="banners-positive-impact-floating-navigation-bar-desktop">
+  <div class="title">
+    <a class="permalink" href="#banners-positive-impact-floating-navigation-bar-desktop"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Banners &gt; Positive Impact &gt; Floating Navigation Bar (Desktop)</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/positive-impact-floating-navigation.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/banners/positive-impact/floating-navigation/floating-navigation-desktop.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/positive-impact-floating-navigation.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand pi-desktop-subnav"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav me-auto mb-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">aria-current=</span><span class="s">"page"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Overview<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Community<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Environment<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Wildlife<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Positive Impact Safaris<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+<span class="c">&lt;!-- &lt;nav class="navbar navbar-expand-sm desktop-navbar desktop-navbar-container"&gt;
+    &lt;div class="container-fluid"&gt;
+      &lt;ul class="navbar-nav me-auto desktop-navbar-content"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link active" aria-current="page" href="#"&gt;Overview&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Community&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Environmental&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Wildlife&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Positive Impact Safaris&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+        
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt; --&gt;</span></code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Floating Navigation found upon entering the Positive Impact page. Primarily used for exploring the different sections of information available to the user, relating to Positive Impact Safari Tours.</p>
+
+<hr />
+
+<section class="sg_pattern" id="banners-positive-impact-banner-75vh">
+  <div class="title">
+    <a class="permalink" href="#banners-positive-impact-banner-75vh"><i class="icon" data-icon="link"></i></a><div class="header typo_eagle">Banners &gt; Positive Impact &gt; Banner 75vh</div> 
+    <div class="sg_label draft">draft</div>
+  </div>
+  <div class="sg_pattern_control" data-styles="components/positive-impact-banners.scss">
+    <a href="javascript:void(0)" title="View Source Code" class="sg_helper_code button"><i class="icon" data-icon="code"></i></a>  
+    <a href="" title="Open in new window" class="sg_helper_open button" target="_blank"><i class="icon" data-icon="screen_share"></i></a>
+  </div>
+  <div class="sg_viewport">
+    <iframe frameborder="0" scrolling="no" src="/src/patterns/components/banners/positive-impact/banners/banner-75vh.html" allowfullscreen=""></iframe>
+  </div>
+  <div class="sg_code" data-styles="components/positive-impact-banners.scss">
+<!--  Get all Patterns, find the the Pattern that matches the pattern_url, print the Pattern code -->
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Card --&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-bleed"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"position-relative p-5 bg-cover overlay overlay-black overlay-20 mb-5 mb-xl-0 pi-banner-image"</span> <span class="na">style=</span><span class="s">"background-image: url(https://cdn-images.go2africa.com/wp-content/uploads/2022/09/23075318/Community-Banner-1920X768.png);"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"hstack gap-2 position-absolute pi-start-10 pi-bottom-20"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"pi-header-badge position-relative"</span> <span class="na">src=</span><span class="s">"https://cdn-images.go2africa.com/wp-content/uploads/2022/09/23145610/pi-community.svg"</span> <span class="na">style=</span><span class="s">"margin:0;"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"vstack gap-0 pi-header-text-block"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"position-relative text-white text-uppercase fw-semibold text-wrap mb-0 pi-header-text-h2"</span><span class="nt">&gt;</span>Community<span class="nt">&lt;/h2&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"position-relative text-white mb-0 pi-header-subtitle-text"</span><span class="nt">&gt;</span>
+                        Celebrating Culture
+                    <span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- / .row --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+
+
+<span class="c">&lt;!-- 
+    OLD CODE
+    &lt;div class="container-fluid pi-hero-banner"&gt;
+    &lt;div class="pi-header-free-content"&gt;
+        &lt;div class="pi-header-title-container"&gt;
+            &lt;img class="pi-header-title-container-badge" src="https://cdn-images.go2africa.com/wp-content/uploads/2022/09/23145610/pi-community.svg"&gt;
+            &lt;div class="pi-header-texts"&gt;
+                &lt;h2 class="pi-header-title text-white"&gt;Community&lt;/h2&gt;
+                &lt;p class="pi-sub-header"&gt;
+                    Celebrating Culture
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; --&gt;</span>
+    </code></pre></figure>
+
+  </div>
+</section>
+
+<hr />
+
+<p>This is the Hero Banner you see when entering the positive impact page.</p>
+
+<hr />
+
+  </div>
+</article>
+      </main>
+    </div>
+    <script src="/styleguide/js/main.js"></script>
+<script src="/styleguide/js/libs/iframeResizer.min.js"></script>
+<script src="/styleguide/js/resize.js"></script>
+  </body>
+</html>
